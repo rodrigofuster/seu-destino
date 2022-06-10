@@ -1,5 +1,6 @@
 // criando as respostas.
 const elementoResposta = document.querySelector("#resposta");
+const inputPergunta = document.querySelector("#pergunta");
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -28,9 +29,11 @@ const respostas = [
   "Os astros não indicam isso!",
   "Os astros estão ao seu favor!",
 ];
+
+
 // gerar numero de resposta aleátorio.
 function fazerPergunta() {
   const totalRespostas = respostas.length;
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas);
-  elementoResposta.innerHTML = "Mostrar";
+  elementoResposta.innerHTML = respostas[numeroAleatorio];
 }

@@ -1,3 +1,4 @@
+// criando as respostas.
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -26,3 +27,13 @@ const respostas = [
   "Os astros não indicam isso!", 
   "Os astros estão ao seu favor!",
 ]
+// gerar numero de resposta aleátorio. 
+const totalRespostas = respostas.length; 
+const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
+
+//console.log(numeroAleatorio)
+
+function fazerPergunta() {
+  
+
+}

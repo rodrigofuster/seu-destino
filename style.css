@@ -52,10 +52,11 @@ button {
   background-color: blueviolet;
   color: white;
   transition: filter 0.2s;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 button:hover {
   filter: brightness(1.2);
   cursor: pointer;
 }
+

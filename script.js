@@ -1,6 +1,8 @@
-// criando as respostas.
+// criando os elementos.
 const elementoResposta = document.querySelector("#resposta");
 const inputPergunta = document.querySelector("#pergunta");
+
+// criando as respostas.
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -30,10 +32,18 @@ const respostas = [
   "Os astros estão ao seu favor!",
 ];
 
-
-// gerar numero de resposta aleátorio.
 function fazerPergunta() {
+  if (inputPergunta.value == "" || null) {
+    alert("Digite sua pergunta");
+    return;
+  }
+  // gerar numero de resposta aleátorio.
   const totalRespostas = respostas.length;
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas);
   elementoResposta.innerHTML = respostas[numeroAleatorio];
+
+  // sumir resposta
+  setTimeout(function () {
+    elementoResposta.style.opacity = 0;
+  }, 3000);
 }

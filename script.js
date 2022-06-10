@@ -23,4 +23,6 @@ const respostas = [
   "Os sinais apontam que não.", 
   "Óbvio que sim.", 
   "Óbvio que não.", 
+  "Os astros não indicam isso!", 
+  "Os astros estão ao seu favor!",
 ]
